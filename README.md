@@ -17,20 +17,20 @@ Monday 11.00-11.45
 
 | Date  | Lecturer | Topic | Exercise | JC1 | JC2 |
 | --- | --- | --- | --- | --- | --- |
-| 16.09.2023  | Mark | admin; mol. bio. basics | quarto; git(hub) | | |
-| 23.09.2023  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
-| 30.09.2023  | Mark  | limma + friends | linear model simulation + design matrices | | |
-| 07.10.2023  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
-| 14.10.2023  | Hubert | mapping  | Rsubread | | |
-| 21.10.2023  | Hubert | RNA-seq quantification | RSEM  | X | X |
-| 28.10.2023  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
-| 04.11.2023  | Mark | edgeR+friends 2 | advanced edgeR/voom | X | X |
-| 11.11.2023  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | X | X |
-| 18.11.2023  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
-| 25.11.2023  | Mark | hands-on session #2: cytometry | cytof null comparison | X | X |
-| 02.12.2023  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X
-| 09.12.2023  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
-| 16.12.2023  | Mark | spatial omics  | spatial statistics | X | X |
+| 16.09.2024  | Mark | admin; mol. bio. basics | quarto; git(hub) | | |
+| 23.09.2024  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
+| 30.09.2024  | Mark  | limma + friends | linear model simulation + design matrices | | |
+| 07.10.2024  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
+| 14.10.2024  | Hubert | mapping  | Rsubread | | |
+| 21.10.2024  | Hubert | RNA-seq quantification | RSEM  | X | X |
+| 28.10.2024  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
+| 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | X | X |
+| 11.11.2024  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | X | X |
+| 18.11.2024  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
+| 25.11.2024  | Mark | hands-on session #2: cytometry | cytof null comparison | X | X |
+| 02.12.2024  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X
+| 09.12.2024  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
+| 16.12.2024  | Mark | spatial omics  | spatial statistics | X | X |
  
 
 ## Course material
