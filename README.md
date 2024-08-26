@@ -27,9 +27,9 @@ Monday 11.00-11.45
 | 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | X | X |
 | 11.11.2024  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | X | X |
 | 18.11.2024  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
-| 25.11.2024  | Mark | hands-on session #2: cytometry | cytof null comparison | X | X |
+| 25.11.2024  | tba | hands-on session #2: cytometry | cytof null comparison | X | X |
 | 02.12.2024  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X
-| 09.12.2024  | Pierre-Luc | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
+| 09.12.2024  | tba | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
 | 16.12.2024  | Mark | spatial omics  | spatial statistics | X | X |
  
 
