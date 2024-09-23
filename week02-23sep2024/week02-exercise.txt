@@ -1,0 +1,23 @@
+
+Week 2 Exercise Part A (as a group): Technology
+
+- using a ChatGPT-like tool or web searches, write a short summary of "how your technology works"
+- create a README.md markdown file with your description, eventually put this in your group repository
+- in the README.md, also include: i) the GitHub usernames of group members; ii) if using ChatGPT, specify which tool was used and what prompt(s) was/were used
+- submission: put the README.md in the group repository
+
+
+Week 2 Exercise Part B (as a group): linking *Technology*/*Application* for a Sequencing Assay
+
+- browse the list of **-seq assays (see [1,2] below) and pick one to summarize; once picked, post to #exercises Slack channel
+- using a ChatGPT-like tool or web searches, write a short summary about what the assay does and what it is used for (include links to relevant resources)
+- make the link (technology -> application -> statistics); add this to your summary
+- create a markdown file (NAME IT with the selected assay and .md) with the description
+- in the markdown file, include the GitHub usernames of all group members
+- fork the [material](https://github.com/sta426hs2024/material) repo
+- in the forked repository, add your markdown file to the `week02-23sep2024/brainstorm` directory of the fork
+- submission: send a pull request to the main branch repo of the `material` repo
+
+Links to **-seq:
+[1] https://liorpachter.wordpress.com/seq/
+[2] https://www.illumina.com/content/dam/illumina-marketing/documents/applications/ngs-library-prep/ForAllYouSeqMethods.pdf
