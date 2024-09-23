@@ -1,5 +1,8 @@
 
-Sort-Seq: Carolin A. Müller et al., “The Dynamics of Genome Replication Using Deep Sequencing,” Nucleic Acids Research (October 1, 2013): gkt878, doi:10.1093/nar/gkt878.
+# Sort-Seq: 
+
+The following uses sort-seq to study genome replication dynamics:
+Carolin A. Müller et al., “The Dynamics of Genome Replication Using Deep Sequencing,” Nucleic Acids Research (October 1, 2013): gkt878, doi:10.1093/nar/gkt878.
 
 ## Technology
 The sort-seq assay is a technique used to study how DNA is copied (replicated) in cells. In this method, cells at different stages of the cell cycle are sorted using a process called flow cytometry, which separates cells based on their DNA content. Once the cells are sorted, scientists use sequencing to figure out how much DNA has been replicated in each cell. This helps them understand where and when different parts of the genome are copied during cell division, providing insights into how cells grow and divide.
