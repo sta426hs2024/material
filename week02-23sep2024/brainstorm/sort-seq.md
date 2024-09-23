@@ -1,24 +1,45 @@
 
 Sort-Seq: Carolin A. Müller et al., “The Dynamics of Genome Replication Using Deep Sequencing,” Nucleic Acids Research (October 1, 2013): gkt878, doi:10.1093/nar/gkt878.
 
-### Summary of the Assay:
-The paper discusses a method to study **genome replication dynamics** using **deep sequencing**. Genome replication refers to how DNA copies itself in cells during cell division. The researchers focused on identifying the **origins of replication** (where DNA replication starts) and understanding how DNA replicates at different times during the cell cycle in *Saccharomyces cerevisiae* (a type of yeast). They used various methods to measure changes in the number of DNA copies during replication, providing insights into the timing and control of DNA replication in cells.
-**What the Assay Does**:
-- **Measures DNA replication**: By counting how many copies of DNA are made over time, the assay tracks the progression of DNA replication.
-- **Identifies replication origins**: It helps locate the specific spots where DNA replication starts.
-- **Analyzes replication timing**: It shows when different regions of the genome are replicated during the cell cycle.
-### Application of the Assay:
-This technique is useful for:
-- **Basic biological research**: It helps scientists understand how cells copy their DNA before dividing.
-- **Medical research**: Understanding replication is important because mistakes in DNA replication can lead to diseases like cancer.
-- **Biotechnology**: The method could be applied to yeast or other organisms in industries such as brewing or pharmaceuticals to improve production processes.
-### Technology -> Application -> Statistics:
-**Technology**: The researchers used **deep sequencing**, which generates millions of short DNA sequences to analyze DNA copy number across the genome. They combined this with methods like **fluorescence-activated cell sorting (FACS)** and **marker frequency analysis (MFA)** to accurately measure replication.
-**Application**: By applying this technology, they could measure the replication dynamics of yeast cells, understanding not just when and where replication begins but also how it progresses over time in both normal and mutant strains. This insight is crucial for studying cell division and its regulation in different species.
-**Statistics**:
-- They used **Pearson correlation coefficients** to compare replication timing between experiments.
-- A mathematical model was fitted to the data to calculate Logistic Growth Model for Replication Timing (Trep), the time when half of the cells had replicated a given DNA segment.
-- For data smoothing, they used **Fourier transformation** to remove noise from replication timing profiles.
-Relevant resources for further learning:
-- [Deep Sequencing Explained](https://www.illumina.com/science/technology/next-generation-sequencing.html)
-- [DNA Replication Overview](https://www.khanacademy.org/science/biology/biotech-dna-technology/dna-sequencing/a/dna-sequencing
+## Technology
+The sort-seq assay is a technique used to study how DNA is copied (replicated) in cells. In this method, cells at different stages of the cell cycle are sorted using a process called flow cytometry, which separates cells based on their DNA content. Once the cells are sorted, scientists use sequencing to figure out how much DNA has been replicated in each cell. This helps them understand where and when different parts of the genome are copied during cell division, providing insights into how cells grow and divide.
+
+## Application
+Sort-seq (sorting followed by sequencing) is a powerful technique with various applications in genomic and cellular research. Its main uses include:
+ 1. **Genome Replication Dynamics:**
+   - **Understanding DNA Replication**: Sort-seq is used to map when and where DNA replication starts and progresses across the genome, particularly in eukaryotic cells. By sorting cells at different stages of replication and sequencing their DNA, scientists can construct replication timing profiles.
+ 2. **Cell Cycle Studies:**
+   - **Cell Cycle Analysis**: By sorting cells based on their DNA content (e.g., G1, S, and G2 phases of the cell cycle), researchers can analyze genome replication during different stages of the cell cycle.
+ 3. **Chromatin Accessibility and Gene Expression:**
+   - **ATAC-seq and RNA-seq in Sorted Cells**: Sort-seq can be combined with chromatin accessibility assays (like ATAC-seq) or RNA sequencing (RNA-seq) to investigate gene regulation. For example, sorting cells based on certain markers allows researchers to study how chromatin structure or gene expression changes during specific biological processes.
+ 4. **Single-cell Genomics and Transcriptomics:**
+   - **Gene Expression Profiles**: In single-cell studies, sort-seq can identify cell types and states by isolating specific cell populations, followed by RNA-seq or DNA-seq to generate gene expression or mutation profiles.
+ 5. **Mutation or Copy Number Variation Studies:**
+   - **Tracking Genetic Variations**: It can track mutations or structural variations in genomes by sequencing sorted cell populations that may have undergone particular stress conditions or genetic modifications.
+ 6. **Cancer and Disease Research:**
+   - **Tumor Heterogeneity**: Sort-seq can distinguish between different cell types within a tumor, helping to analyze how various subpopulations contribute to cancer progression and treatment resistance.
+---
+## Statistical Analysis
+The data generated by sort-seq is typically analyzed using several statistical methods, often depending on the specific biological question being addressed. Here’s a general overview of how this data is processed and analyzed:
+1. **Read Mapping**:
+   - First, sequence reads from each sorted population are mapped to a reference genome. Tools like **Bowtie** or **BWA** are used to align these reads.
+2. **Data Normalization**:
+   - Sequencing depth differences are corrected by normalizing the number of reads across different samples or genomic regions to ensure fair comparisons.
+3. **Copy Number Analysis**:
+   - For DNA replication studies, the relative copy number of sequences is calculated. Genomic regions with more reads represent areas that have been replicated earlier, and regions with fewer reads replicate later. These copy numbers can be plotted to generate **replication timing profiles**.
+4. **Statistical Significance Testing**:
+   - To identify significant differences between conditions (e.g., mutant vs. wild-type cells), statistical tests such as **t-tests**, **ANOVA**, or non-parametric tests (like **Mann-Whitney U test**) are used.
+   - In RNA-seq or gene expression studies, **differential expression analysis** using tools like **DESeq2** or **edgeR** is common.
+5. **Correlation Analysis**:
+   - Correlation coefficients (e.g., Pearson or Spearman) are used to compare replication timing profiles, chromatin accessibility data, or gene expression data between different sorted populations.
+6. **Peak Calling**:
+   - If sort-seq is used to detect specific regions of interest, such as replication origins or transcription factor binding sites, **peak-calling algorithms** (e.g., MACS2) are applied to identify regions with enriched signals.
+7. **Machine Learning & Clustering**:
+   - For single-cell studies or when multiple populations are being studied, clustering algorithms (e.g., **t-SNE**, **PCA**, or **k-means**) or machine learning methods may be applied to group cells based on similar sequencing profiles.
+8. **Time Course Analysis**:
+   - When sorting cells by replication timing or cell cycle stage, time course models are often applied to study the dynamics of genome replication or gene expression over time. Non-linear regression models or curve fitting are used to analyze the progression of DNA replication.
+---
+## Overview:
+| Technology  | Application | Statistics |
+| --------    | -------     | --- |
+| Sort-seq  | Genome Replication Dynamics|
