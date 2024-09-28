@@ -1,44 +1,67 @@
-# Statistical Analysis of High-Throughput Genomic and Transcriptomic Data
-Fall/Herbst-semester 2024
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/DTJX0Xc6)
 
-## Lectures
-Mondays 9.00-9.45 (Y27-H-46), 10.00-10.45 (Y27-H-46)
+# About Single-cell RNA sequencing.
+*GitHub names : juslecl, Julia-Frank, JetteGutzeit, MasjaHoogendoorn
 
-## Exercises
-Monday 11.00-11.45
+## Functioning of scRNA-seq
+Single-cell RNA sequencing (scRNA-seq) is a technique to analyse the gene expression of single cells. Usually, it broadly follows 6 steps from preparing the sample to the data analysis.
 
-## Lecturers
+**1. Sample Preparation:** 
+The first step is acquiring the cells you want to analyze, which depends on the type of tissue you are working with. It’s important to ensure that your sample contains only cells and no other contaminants.
 
-[Dr. Hubert Rehrauer](http://www.fgcz.ch/the-center/people/rehrauer.html), Group Leader of Genome Informatics at [FGCZ](http://www.fgcz.ch/)  
+**2. Cell Isolation:**
+Individual cells must be isolated to prevent mixing RNA from different cells. There are several technologies for isolating single cells, and the choice of method depends on the tissue type. Common techniques include:
+- Fluorescence-activated cell sorting (FACS)
+- Magnetic-activated cell sorting (MACS)
+- Microfluidic systems
+- Laser microdissection
 
-[Prof. Dr. Mark Robinson](https://robinsonlabuzh.github.io/), Professor of Statistical Genomics, [DMLS](https://www.mls.uzh.ch/en.html), UZH  
+**3. Cell Lysis and RNA Capture:**
+In this step, the cells are lysed (broken down) to release their RNA. Poly-T primers are then added to capture the RNA, initiating reverse transcription, which results in complementary DNA (cDNA). During this process, each cell is assigned a unique barcode, allowing individual cells to be identified during the analysis.
 
-## Schedule
+**4. cDNA Amplification:**
+To ensure there is enough cDNA for analysis, polymerase chain reaction (PCR) is used to amplify the cDNA.
 
-| Date  | Lecturer | Topic | Exercise | JC1 | JC2 |
-| --- | --- | --- | --- | --- | --- |
-| 16.09.2024  | Mark | admin; mol. bio. basics | quarto; git(hub) | | |
-| 23.09.2024  | Mark | interactive technology/statistics session  | group exercise: technology pull request | | |
-| 30.09.2024  | Mark  | limma + friends | linear model simulation + design matrices | | |
-| 07.10.2024  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
-| 14.10.2024  | Hubert | mapping  | Rsubread | | |
-| 21.10.2024  | Hubert | RNA-seq quantification | RSEM  | X | X |
-| 28.10.2024  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
-| 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | X | X |
-| 11.11.2024  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | X | X |
-| 18.11.2024  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
-| 25.11.2024  | tba | hands-on session #2: cytometry | cytof null comparison | X | X |
-| 02.12.2024  | Mark | single-cell 2: clustering, marker gene DE  | marker gene DE | X | X
-| 09.12.2024  | tba | hands-on session #3: single-cell RNA-seq (cell type definition, differential state)  | full scRNA-seq pipeline | X | X |
-| 16.12.2024  | Mark | spatial omics  | spatial statistics | X | X |
- 
+**5. Library Preparation and Sequencing:**
+Once amplified, the tagged cDNA from all cells is pooled together and prepared for sequencing using next-generation sequencing (NGS) platforms. The same library preparation techniques, sequencing platforms, and genomic alignment tools used for bulk RNA sequencing are employed here.
 
-## Course material
+**6. Data Analysis:**
+The final step involves analyzing the sequencing data to determine the gene expression profiles of individual cells.
 
-Assuming you have git installed locally, you can check out the entire set of course materials with the following command (from command line):
-```
-git clone https://github.com/sta426hs2024/material.git
-```  
-and get updates by running `git pull` at any later time in the same directory.
+## Applications ofscRNA-seq:
+**- Developmental Biology:**
+scRNA-seq is used to study how stem cells differentiate into various cell types, mapping the developmental lineages of tissues such as the brain, heart, and blood.
 
-Alternatively, to retrieve a ZIP file of the repository, you can click on the (green) 'Code' button (top right of main panel) and then click 'Download ZIP'.
+**- Cancer Research:** 
+Tumors are often composed of highly heterogeneous cell populations. scRNA-seq can help identify subpopulations of cancer cells, including rare drug-resistant or metastatic cells.
+
+**- Immunology:**
+scRNA-seq allows for deep profiling of immune cell populations, revealing their roles in infection, autoimmune diseases, or cancer immunotherapy.
+
+**- Neuroscience:**
+Mapping brain cell diversity, understanding neurodegenerative diseases, and exploring how neurons respond to stimuli.
+
+## Advantages and disadvantages of scRNA-seq:
+There are several advantages to the scRNA-seq technique, some of which are: 
+
+**- Information about Individual Cells:**
+scRNA-seq provides gene expression data at the level of individual cells, allowing researchers to identify cellular heterogeneity within tissues.
+
+**- Discovery of Rare Cells:**
+It enables the detection of rare or previously unknown cell populations that may be missed in bulk RNA sequencing.
+
+**- Tracking over Time:** scRNA-seq captures changes in gene expression, helping to track cellular processes like differentiation and development over time.
+
+Nevertheless, scRNA-seq also comes with its own set of disadvantages:
+
+**- Expensive and Specialized Technique:** The technique requires significant financial investment and specialized equipment, which can limit its accessibility, especially for smaller labs.
+
+**- Complex Data Analysis:** scRNA-seq generates large, complex datasets that necessitate advanced bioinformatics tools and expertise, making the analysis process labor-intensive and computationally demanding.
+
+**- Variability:** The procedure can introduce noise and batch effects, which may compromise the accuracy and reproducibility of results if not carefully controlled.
+
+## References:
+Lun, A. T., & Marioni, J. C. (2017). Overcoming confounding plate effects in differential expression analyses of single-cell RNA-seq data. Genome Medicine, 9(1), 1-12. https://doi.org/10.1186/s13073-017-0467-4
+
+## Use of AI tools:
+We used the ChatGPT framework based on GPT-4 which is trained on a knowlegdebase up until September 2023.
