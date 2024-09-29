@@ -1,7 +1,7 @@
 
 # Sort-Seq: 
 
-The following uses sort-seq to study genome replication dynamics:
+The following paper uses sort-seq to study genome replication dynamics:
 Carolin A. Müller et al., “The Dynamics of Genome Replication Using Deep Sequencing,” Nucleic Acids Research (October 1, 2013): gkt878, doi:10.1093/nar/gkt878.
 
 ## Technology
