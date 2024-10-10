@@ -24,7 +24,7 @@ Monday 11.00-11.45
 | 14.10.2024  | Hubert | mapping  | Rsubread | | |
 | 21.10.2024  | Hubert | RNA-seq quantification | RSEM  | X | X |
 | 28.10.2024  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
-| 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | X | X |
+| 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | [Genomic prediction in multi-environment trials in maize using statistical and machine learning methods](https://www.proquest.com/docview/2913316100/4BBE80EEBE564D48PQ/3?sourcetype=Scholarly%20Journals) (JB) | X |
 | 11.11.2024  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | X | X |
 | 18.11.2024  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | X | X |
 | 25.11.2024  | tba | hands-on session #2: cytometry | cytof null comparison | X | X |
