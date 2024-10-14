@@ -53,23 +53,28 @@ buildindex("sacCer3-Rsub", "sacCer3-genome.fasta", memory=2000 )
 
 ## Align
 
-Align to the genome with the align algorithm that does not look for spliced alignements
+Align to the genome with the *RSubread::align* function that does not explicitely look for spliced alignements. Do the alignment for the full length reads. 
+Then run the alignment also a second time with fixed trimming of 10 bases from both ends, i.e. use *align(....., nTrim5 = 10, nTrim3 = 10)*.
 
-Question: What fraction of the reads aligns uniquely and multiple times?
+## Question 1: For both runs (with and without trimming), what fraction of the reads aligns uniquely and multiple times?
 
+
+## Question 2: Are the reads that align the same in both cases?
 
 Check the agreement of the alignments. Load the uniquely aligning reads. Use the function *readGAlignments*.
 Use the parameter settings to read also the read id, and the number of hits (NH)
 
-```{r}
+Hint:
+```{r, eval=FALSE}
 sbp <- ScanBamParam(what = c("qname"), tag="NH")
+alignFull <- readGAlignments(..., param=sbp)
+alignTrimmed <- readGAlignments(..., param=sbp)
 
 ```
 
-Question: Are the reads that align the same in both cases?
 
 
-Question: For those reads that align full and trimmed, do they align to the same location?
+## Question 3: For those reads that align full and trimmed, do they align to the same location?
 
 Hint:
 

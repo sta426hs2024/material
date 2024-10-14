@@ -3027,6 +3027,9 @@ vertical-align: -.125em;
   <ul>
   <li><a href="#load-packages-and-data" id="toc-load-packages-and-data" class="nav-link active" data-scroll-target="#load-packages-and-data">Load Packages and Data</a></li>
   <li><a href="#align" id="toc-align" class="nav-link" data-scroll-target="#align">Align</a></li>
+  <li><a href="#question-1-for-both-runs-with-and-without-trimming-what-fraction-of-the-reads-aligns-uniquely-and-multiple-times" id="toc-question-1-for-both-runs-with-and-without-trimming-what-fraction-of-the-reads-aligns-uniquely-and-multiple-times" class="nav-link" data-scroll-target="#question-1-for-both-runs-with-and-without-trimming-what-fraction-of-the-reads-aligns-uniquely-and-multiple-times">Question 1: For both runs (with and without trimming), what fraction of the reads aligns uniquely and multiple times?</a></li>
+  <li><a href="#question-2-are-the-reads-that-align-the-same-in-both-cases" id="toc-question-2-are-the-reads-that-align-the-same-in-both-cases" class="nav-link" data-scroll-target="#question-2-are-the-reads-that-align-the-same-in-both-cases">Question 2: Are the reads that align the same in both cases?</a></li>
+  <li><a href="#question-3-for-those-reads-that-align-full-and-trimmed-do-they-align-to-the-same-location" id="toc-question-3-for-those-reads-that-align-full-and-trimmed-do-they-align-to-the-same-location" class="nav-link" data-scroll-target="#question-3-for-those-reads-that-align-full-and-trimmed-do-they-align-to-the-same-location">Question 3: For those reads that align full and trimmed, do they align to the same location?</a></li>
   </ul>
 </nav>
 </div>
@@ -3121,7 +3124,7 @@ writing chrM sequence to file ... OK</code></pre>
 ||          Repeat threshold : 100 repeats                                    ||
 ||              Gapped index : no                                             ||
 ||                                                                            ||
-||       Free / total memory : 2.3GB / 32.0GB                                 ||
+||       Free / total memory : 2.2GB / 32.0GB                                 ||
 ||                                                                            ||
 ||               Input files : 1 file in total                                ||
 ||                             o sacCer3-genome.fasta                         ||
@@ -3140,34 +3143,34 @@ writing chrM sequence to file ... OK</code></pre>
 || 11 uninformative subreads were found.                                      ||
 || These subreads were excluded from index building.                          ||
 || Estimate the index size...                                                 ||
-||    8%,   0 mins elapsed, rate=3362.9k bps/s                                ||
-||   16%,   0 mins elapsed, rate=4044.2k bps/s                                ||
-||   24%,   0 mins elapsed, rate=4327.3k bps/s                                ||
-||   33%,   0 mins elapsed, rate=4496.2k bps/s                                ||
-||   41%,   0 mins elapsed, rate=4635.9k bps/s                                ||
-||   49%,   0 mins elapsed, rate=4736.0k bps/s                                ||
-||   58%,   0 mins elapsed, rate=4782.7k bps/s                                ||
-||   66%,   0 mins elapsed, rate=4821.3k bps/s                                ||
-||   74%,   0 mins elapsed, rate=4867.6k bps/s                                ||
-||   83%,   0 mins elapsed, rate=4902.0k bps/s                                ||
-||   91%,   0 mins elapsed, rate=4935.7k bps/s                                ||
+||    8%,   0 mins elapsed, rate=3248.5k bps/s                                ||
+||   16%,   0 mins elapsed, rate=3981.0k bps/s                                ||
+||   24%,   0 mins elapsed, rate=4243.0k bps/s                                ||
+||   33%,   0 mins elapsed, rate=4455.7k bps/s                                ||
+||   41%,   0 mins elapsed, rate=4593.7k bps/s                                ||
+||   49%,   0 mins elapsed, rate=4666.3k bps/s                                ||
+||   58%,   0 mins elapsed, rate=4713.7k bps/s                                ||
+||   66%,   0 mins elapsed, rate=4784.9k bps/s                                ||
+||   74%,   0 mins elapsed, rate=4842.6k bps/s                                ||
+||   83%,   0 mins elapsed, rate=4886.4k bps/s                                ||
+||   91%,   0 mins elapsed, rate=4938.7k bps/s                                ||
 ||                                                                            ||
 ||              WARNING: available memory is lower than 3.0 GB.               ||
 ||                           The program may run very slow.                   ||
 || Build a gapped index and/or split index into blocks to reduce memory use.  ||
 ||                                                                            ||
 || Build the index...                                                         ||
-||    8%,   0 mins elapsed, rate=469.2k bps/s                                 ||
-||   16%,   0 mins elapsed, rate=784.6k bps/s                                 ||
-||   24%,   0 mins elapsed, rate=1013.1k bps/s                                ||
-||   33%,   0 mins elapsed, rate=1175.2k bps/s                                ||
-||   41%,   0 mins elapsed, rate=1311.2k bps/s                                ||
-||   49%,   0 mins elapsed, rate=1410.6k bps/s                                ||
-||   58%,   0 mins elapsed, rate=1506.5k bps/s                                ||
-||   66%,   0 mins elapsed, rate=1577.2k bps/s                                ||
-||   74%,   0 mins elapsed, rate=1646.4k bps/s                                ||
-||   83%,   0 mins elapsed, rate=1696.4k bps/s                                ||
-||   91%,   0 mins elapsed, rate=1740.0k bps/s                                ||
+||    8%,   0 mins elapsed, rate=481.4k bps/s                                 ||
+||   16%,   0 mins elapsed, rate=818.7k bps/s                                 ||
+||   24%,   0 mins elapsed, rate=1071.0k bps/s                                ||
+||   33%,   0 mins elapsed, rate=1258.9k bps/s                                ||
+||   41%,   0 mins elapsed, rate=1398.9k bps/s                                ||
+||   49%,   0 mins elapsed, rate=1510.1k bps/s                                ||
+||   58%,   0 mins elapsed, rate=1595.3k bps/s                                ||
+||   66%,   0 mins elapsed, rate=1668.7k bps/s                                ||
+||   74%,   0 mins elapsed, rate=1735.7k bps/s                                ||
+||   83%,   0 mins elapsed, rate=1801.0k bps/s                                ||
+||   91%,   0 mins elapsed, rate=1847.1k bps/s                                ||
 || Save current index block...                                                ||
 ||  [ 0.0% finished ]                                                         ||
 ||  [ 10.0% finished ]                                                        ||
@@ -3190,14 +3193,23 @@ writing chrM sequence to file ... OK</code></pre>
 </section>
 <section id="align" class="level2">
 <h2 class="anchored" data-anchor-id="align">Align</h2>
-<p>Align to the genome with the align algorithm that does not look for spliced alignements</p>
-<p>Question: What fraction of the reads aligns uniquely and multiple times?</p>
+<p>Align to the genome with the <em>RSubread::align</em> function that does not explicitely look for spliced alignements. Do the alignment for the full length reads. Then run the alignment also a second time with fixed trimming of 10 bases from both ends, i.e. use <em>align(….., nTrim5 = 10, nTrim3 = 10)</em>.</p>
+</section>
+<section id="question-1-for-both-runs-with-and-without-trimming-what-fraction-of-the-reads-aligns-uniquely-and-multiple-times" class="level2">
+<h2 class="anchored" data-anchor-id="question-1-for-both-runs-with-and-without-trimming-what-fraction-of-the-reads-aligns-uniquely-and-multiple-times">Question 1: For both runs (with and without trimming), what fraction of the reads aligns uniquely and multiple times?</h2>
+</section>
+<section id="question-2-are-the-reads-that-align-the-same-in-both-cases" class="level2">
+<h2 class="anchored" data-anchor-id="question-2-are-the-reads-that-align-the-same-in-both-cases">Question 2: Are the reads that align the same in both cases?</h2>
 <p>Check the agreement of the alignments. Load the uniquely aligning reads. Use the function <em>readGAlignments</em>. Use the parameter settings to read also the read id, and the number of hits (NH)</p>
+<p>Hint:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>sbp <span class="ot">&lt;-</span> <span class="fu">ScanBamParam</span>(<span class="at">what =</span> <span class="fu">c</span>(<span class="st">&quot;qname&quot;</span>), <span class="at">tag=</span><span class="st">&quot;NH&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a>sbp <span class="ot">&lt;-</span> <span class="fu">ScanBamParam</span>(<span class="at">what =</span> <span class="fu">c</span>(<span class="st">&quot;qname&quot;</span>), <span class="at">tag=</span><span class="st">&quot;NH&quot;</span>)</span>
+<span id="cb7-2"><a href="#cb7-2"></a>alignFull <span class="ot">&lt;-</span> <span class="fu">readGAlignments</span>(..., <span class="at">param=</span>sbp)</span>
+<span id="cb7-3"><a href="#cb7-3"></a>alignTrimmed <span class="ot">&lt;-</span> <span class="fu">readGAlignments</span>(..., <span class="at">param=</span>sbp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Question: Are the reads that align the same in both cases?</p>
-<p>Question: For those reads that align full and trimmed, do they align to the same location?</p>
+</section>
+<section id="question-3-for-those-reads-that-align-full-and-trimmed-do-they-align-to-the-same-location" class="level2">
+<h2 class="anchored" data-anchor-id="question-3-for-those-reads-that-align-full-and-trimmed-do-they-align-to-the-same-location">Question 3: For those reads that align full and trimmed, do they align to the same location?</h2>
 <p>Hint:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="do">## aligning to the same location?</span></span>
