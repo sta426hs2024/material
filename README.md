@@ -22,8 +22,8 @@ Monday 11.00-11.45
 | 30.09.2024  | Mark  | limma + friends | linear model simulation + design matrices | | |
 | 07.10.2024  | Hubert | NGS intro; exploratory data analysis | EDA in R | | |
 | 14.10.2024  | Hubert | mapping  | Rsubread | | |
-| 21.10.2024  | Hubert | RNA-seq quantification | RSEM  | X | X |
-| 28.10.2024  | Mark | edgeR+friends 1 | basic edgeR/voom | X | X |
+| 21.10.2024  | Hubert | RNA-seq quantification | RSEM  | X | X | 
+| 28.10.2024  | Mark | edgeR+friends 1 | basic edgeR/voom | [Validation of noise models for single-cell transcriptomics](https://doi.org/10.1038/nmeth.2930) (GC, YD) | X |
 | 04.11.2024  | Mark | edgeR+friends 2 | advanced edgeR/voom | [Genomic prediction in multi-environment trials in maize using statistical and machine learning methods](https://www.proquest.com/docview/2913316100/4BBE80EEBE564D48PQ/3?sourcetype=Scholarly%20Journals) (JB) | X |
 | 11.11.2024  | Mark | hands-on session #1: RNA-seq |  FASTQC/Salmon/etc. | [IDEAS: individual level differential expression analysis for single-cell RNA-seq data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02605-1) (GO) | X |
 | 18.11.2024  | Hubert | single-cell 1: preprocessing, dim. reduction, clustering | clustering | [MOFA+: a statistical framework for comprehensive integration of multi-modal single-cell data - Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02015-1) (ZL, PM) | [Identifying genetic variants that influence the abundance of cell states in single-cell data](https://www.nature.com/articles/s41588-024-01909-1) (JF, TH) |
